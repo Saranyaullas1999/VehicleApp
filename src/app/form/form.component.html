@@ -6,34 +6,34 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="">Vehicle Year :</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="year" [(ngModel)]="year">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="">Vehicle Model :</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="model" [(ngModel)]="model">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="">Vehicle Identification Number :</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="vin" [(ngModel)]="vin">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="">Vehicle Owner</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="owner" [(ngModel)]="owner">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="">Address :</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="">Pincode :</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="pincode" [(ngModel)]="pincode">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="">Phone No :</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="phone" [(ngModel)]="phone">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-warning">Submit</button>
+                    <button class="btn btn-warning" (click)="readValue()">Submit</button>
                 </div>
             </div>
            
